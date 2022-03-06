@@ -1,4 +1,4 @@
-### println 대신 BufferedWriter 사용하기
+### println 대신 BufferedWriter를 사용하자!
 ```
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
@@ -35,6 +35,17 @@ public class BufferedWriterTest {
 
 <br>
 
+### 단일 쓰레드 환경이라면 StringBuffer 대신 StringBuilder를 사용하자!
+```
+val sb = StringBuilder("Kelly")
+sb.append("Grace")
+
+println(sb)   // Kelly Grace
+```
+- https://kotlinworld.com/36
+
+<br>
+
 ### ToDos
 - [ ] 10951번, 10952 with 함수 이용한 방식 적용해보기 (코틀린 인 액션 with 함수 파트 읽은 후에)
 
@@ -44,3 +55,5 @@ public class BufferedWriterTest {
 ### ETC
 - 10953번 문제에서 내 코드가 Kotlin 기준으로 1등을 차지했다...! 놀라워라...
     <img src="https://user-images.githubusercontent.com/52561963/156763917-6f6c60c6-1169-4665-a3d3-2c965140e973.png"/>
+- 1924번 문제도 2등을...?! 다만 수요일 WED를 WEN으로, 목요일 THU를 THR라고 작성했다 두 번 틀렸음...
+    <img src="https://user-images.githubusercontent.com/52561963/156909796-8f553a16-7c44-4c59-bd24-d6ab569f8d3f.png"/>
