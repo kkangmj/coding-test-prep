@@ -35,12 +35,23 @@ public class BufferedWriterTest {
 
 <br>
 
-### 단일 쓰레드 환경이라면 StringBuffer 대신 StringBuilder를 사용하자!
+### BufferedWriter에 여러 번 write하는 것보다 StringBuilder에 여러 번 append하자!
+StringBuilder를 이용해 append하는 것이 실행 속도가 훨씬 빠름.
 ```
-val sb = StringBuilder("Kelly")
-sb.append("Grace")
+val bw = BufferedWriter(...)
 
-println(sb)   // Kelly Grace
+// X
+bw.wrtie("A")
+bw.write("B")
+bw.write("C")
+bw.flush()
+
+// O
+val sb = StringBuilder()
+sb.append("A")
+sb.append("B")
+sb.append("C")
+bw.flush()
 ```
 - https://kotlinworld.com/36
 
