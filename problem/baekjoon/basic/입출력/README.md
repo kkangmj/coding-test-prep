@@ -65,6 +65,9 @@ bw.flush()
 
 ### ETC
 - 10953번 문제에서 내 코드가 Kotlin 기준으로 1등을 차지했다...! 놀라워라...
-    <img src="https://user-images.githubusercontent.com/52561963/156763917-6f6c60c6-1169-4665-a3d3-2c965140e973.png"/>
+    <img src="https://user-images.githubusercontent.com/52561963/156763917-6f6c60c6-1169-4665-a3d3-2c965140e973.png" width="400"/>
 - 1924번 문제도 2등을...?! 다만 수요일 WED를 WEN으로, 목요일 THU를 THR라고 작성했다 두 번 틀렸음...
-    <img src="https://user-images.githubusercontent.com/52561963/156909796-8f553a16-7c44-4c59-bd24-d6ab569f8d3f.png"/>
+    <img src="https://user-images.githubusercontent.com/52561963/156909796-8f553a16-7c44-4c59-bd24-d6ab569f8d3f.png" width="400"/>
+- 10991번 문제에서 1등! 
+
+    <img src="https://user-images.githubusercontent.com/52561963/158047628-0b93b657-f9cb-45c7-82bb-9b3c22f1d6d4.png" width="400"/>
