@@ -57,6 +57,14 @@ bw.flush()
 
 <br>
 
+### repeat이 아니라 for문을 사용하자!
+```
+"*".repeat(5)    // X
+for (i in 1..5) sb.append("*")    // O
+```
+
+<br>
+
 ### ToDos
 - [ ] 10951번, 10952 with 함수 이용한 방식 적용해보기 (코틀린 인 액션 with 함수 파트 읽은 후에)
 
@@ -71,3 +79,5 @@ bw.flush()
 - 10991번 문제에서 1등! 
 
     <img src="https://user-images.githubusercontent.com/52561963/158047628-0b93b657-f9cb-45c7-82bb-9b3c22f1d6d4.png" width="400"/>
+- 10992번은 2등!
+    <img src="https://user-images.githubusercontent.com/52561963/158103292-6f14ee24-6d94-4770-a92e-41b9f70c757b.png" width="400" />
