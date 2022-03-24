@@ -92,3 +92,7 @@
 - 배열을 하나 더 사용하는 순간 실행 속도는 확연히 떨어진다. 
 - 아래는 1463번 문제에서 배열을 두 개 사용했을 때와 하나 사용했을 때의 실행속도 
     <img src="https://user-images.githubusercontent.com/52561963/158157460-44df84ce-569b-4671-980e-b14cb2eda8ac.png" width="400" />
+
+# ETC
+- 11057번 문제 코틀린 기준 5등!
+    <img src="https://user-images.githubusercontent.com/52561963/159643602-344beb98-7af8-4799-97e7-5fead2177eef.png" width="400" />
