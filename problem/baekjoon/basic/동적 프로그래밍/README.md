@@ -1,4 +1,4 @@
-# 동적 계획법(DP)
+## 동적 계획법(DP)
 ### DP의 사용 조건
    - Overlapping Subproblems(겹치는 부분 문제)
      - 동일한 작은 문제들이 반복해 나타남. 
@@ -87,7 +87,7 @@
 
 <br>
 
-# What I've learned from DP problems
+## What I've learned from DP problems
 ### 배열은 신중하게 사용하자
 - 배열을 하나 더 사용하는 순간 실행 속도는 확연히 떨어진다. 
 - 아래는 1463번 문제에서 배열을 두 개 사용했을 때와 하나 사용했을 때의 실행속도 
