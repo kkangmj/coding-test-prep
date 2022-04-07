@@ -27,7 +27,7 @@ fun getNumberOfPressedWithAllButton(channel: Int): Int {
     return min(getDigitOf(channel), abs(100 - channel))
 }
 
-fun getNumberOfPressedWithSomeButton(channel: Int, numberList: String): Int {
+fun getNumberOfPressedWithSomeButton2(channel: Int, numberList: String): Int {
     val regex = numberList.toRegex()
     var min = 1000000
 
@@ -52,7 +52,7 @@ fun getNumberOfPressedWithNumberKey(channel: Int, target: Int): Int {
     return count
 }
 
-fun getDigitOf(number: Int): Int {
+fun getDigitOf1(number: Int): Int {
     var digit = 0
     var target = number
 
