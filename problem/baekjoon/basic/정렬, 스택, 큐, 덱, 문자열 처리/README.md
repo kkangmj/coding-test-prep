@@ -257,9 +257,12 @@ fun heapify(array: ArrayList<Int>, size: Int, pNode: Int) {
 - 힙 정렬로 문제를 풀었을 때는 1644ms...
 - 그런데 알고리즘 없이 간단하게 배열로 풀었을 때(other-1) 실행시간은 676ms
 
+<br>
+
 ### 두 객체 비교 시 Comparable의 compareTo를 구현하는 것보다 비교 메서드를 따로 구현하는 것이 빠르다.
 - 'Kotlin in Action' 공부하며 코틀린에서는 비교 연산자(<, > 등)가 compareTo 호출로 컴파일됨을 배움. 이러한 코틀린의 관례에 따라 compareTo를 직접 사용하는 것보다 비교 연산자를 사용하면 코드를 훨씬 간결하게 작성할 수 있다는 것을 배움. 
 - 따라서, 이를 11651번 문제에 적용해봄. 그러나 Comparable을 구현한 코드(11651-comparable.kt)와 비교 메서드를 따로 구현한 코드(11651_좌표 정렬하기_2.kt)의 실행 시간을 비교해본 결과, Comparable을 구현하는 것보다 비교 메서드를 직접 구현하는 것이 빠르다는 것을 알게 됨. 
+
   <img src="https://user-images.githubusercontent.com/52561963/162363269-a07661fe-70ac-4243-8ef3-f334d19ab0dd.png" width="400" >
 
 <br>
