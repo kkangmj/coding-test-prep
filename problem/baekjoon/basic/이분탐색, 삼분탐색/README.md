@@ -62,9 +62,9 @@ fun squreRootBSearch(n: Int) {
     var pl = 0
     var pr = n-1
   
-    while (pl <= pr) {
+    while (pl < pr) {
       var pc = (key + pr) / 2 
-      if (key < a[pc]) {
+      if (key <= a[pc]) {
         pr = pc
       } else {
         pl = pc + 1
@@ -92,3 +92,10 @@ fun squreRootBSearch(n: Int) {
     return pl   
   }
   ```
+
+
+<br>
+
+## ETC
+- 2110번 문제 코틀린 기준 3등!
+  <img src="https://user-images.githubusercontent.com/52561963/163559870-37b885fb-0373-4382-adc1-f1f70b501ac1.png" width="400">
