@@ -17,4 +17,8 @@
 
 ## ETC
 - 11728번 문제 코틀린 기준 3등!
+    
   <img src="https://user-images.githubusercontent.com/52561963/159880480-e92ae8eb-602e-426f-b5d3-776cf2babbbd.png" width="400" />
+
+- 1760번 문제 코틀린 기준 8등~! 참 더러운 문제였다...
+  <img src="https://user-images.githubusercontent.com/52561963/163702357-b63ce777-fdc8-4213-ad68-4e2318d6761a.png" width="400"/>
