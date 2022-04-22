@@ -25,7 +25,8 @@ fun swap(array: ArrayList<Int>, min: Int, i: Int) {
 }
 ```
 - 시간복잡도: O(n^2)
-- 안정 정렬이 아님. 
+- 안정 정렬이 아님.
+  - 안정 정렬: 도일한 값에 대해 기존의 순서가 유지되는 정렬
   - ex) 3 3 1 5
 
 
@@ -51,8 +52,13 @@ fun insertSort(array: ArrayList<Int>) {
 
 
 ### 버블 정렬
+
+
 - 인접한 2개의 레코드의 키를 비교하여 순서대로 되어 있지 않으면 교환
 - 이러한 비교-교환 과정을 리스트의 왼쪽 끝에서 오른쪽의 끝까지 반복
+
+  <img src="https://user-images.githubusercontent.com/52561963/164128849-6414a7e9-b837-424e-86e8-b03e1cb85c8c.jpg" width="400" >
+
 ```
 fun bubbleSort(array: Array<Int>) {
   for (i in 1..array.size) {
@@ -69,12 +75,68 @@ fun bubbleSort(array: Array<Int>) {
 
 - 시간복잡도: O(n^2)
 - 완전 탐색
+- 안정 정렬임.
 
 
 ### 병합 정렬
 - 분할: 리스트를 두 개의 균등한 크기의 배열로 분할
-- 정복: 각 부분 배열을 재귀적으로 병합정렬
-- 결합: 2개의 정렬된 부분배열을 병합
+- 정복: 각 부분 배열을 재귀적으로 정렬, 부분 배열의 크기가 충분히 작지 않으면 순환 호출을 이용해 다시 분할 정복 방법 적용
+- 결합: 2개의 정렬된 부분배열을 하나의 배열에 병합
+
+  <img src="https://user-images.githubusercontent.com/52561963/164129316-438549fd-4174-44d0-9b47-e3cf4960fd48.png" width="400" >
+
+```
+fun mergeSort(array: IntArray, left: Int, right: Int) {
+  if (left < right) {
+      val mid = (left + right) / 2
+    mergeSort(array, left, mid)
+    mergeSort(array, mid + 1, right)
+    merge(array, left, mid, right)
+  }
+}
+
+fun merge(array: IntArray, left: Int, mid: Int, right: Int) {
+  var leftArrayIndex = left    // 정렬된 왼쪽 리스트에 대한 인덱스
+  var rightArrayIndex = mid + 1    // 정렬된 오른쪽 리스트에 대한 인덱스
+  var sortedArrayIndex = left    // 정렬될 리스트에 대한 인덱스
+  
+  val sortedArray = IntArray(array.size)
+  
+  while (leftArrayIndex <= mid && rightArrayIndex <= right) {
+    if (array[leftArrayIndex] <= array[rightArrayIndex]) {
+      sortedArray[sortedArrayIndex] = array[leftArrayIndex]
+      sortedArrayIndex += 1
+      leftArrayIndex += 1
+    } else {
+      sortedArray[sortedArrayIndex] = array[rightArrayIndex]
+      sortedArrayIndex += 1
+      rightArrayIndex += 1
+    }
+  }
+  
+  if (leftArrayIndex > mid) {
+    // 정렬된 오른쪽 리스트에 값이 남아 있는 경우
+    for (i in rightArrayIndex..right) {
+      sortedArray[sortedArrayIndex] = array[i]
+      sortedArrayIndex += 1
+    }
+  } else {
+    // 정렬된 왼쪽 리스트에 값이 남아 있는 경우
+    for (i in leftArrayIndex..mid) {
+      sortedArray[sortedArrayIndex] = array[i]
+      sortedArrayIndex += 1
+    }
+  }
+  
+  // 값을 원래 리스트로 복사하기
+  for (i in left..right) {
+    array[i] = sortedArray[i]
+  }
+}
+```
+- REFERENCE
+  - https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html
+  - https://cocoon1787.tistory.com/779
 ```
 fun split(array: ArrayList<Int>) {
   if (arr.size <= 1) return array
@@ -117,6 +179,7 @@ fun merge(left: ArrayList<Int>, right: ArrayList<Int>) {
 ```
 - 시간복잡도: O(nlogn)
 - 분할 정복 방식
+- 안정 정렬임. 
 
 ### 퀵 정렬
 - 리스트 안에 있는 한 요소(피벗)을 선택함.
