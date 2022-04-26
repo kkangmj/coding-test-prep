@@ -3,6 +3,12 @@
 1. Brute Force
 2. 비트마스크
 3. 순열
+   - 10819번 문제 
+   - 재귀로 풀었으나 실행 시간이 412ms로 다른 사람들의 풀이에 비해 훨씬 오래 걸림. (10819_차이를 최대로.kt / 실행 시간: 412ms)
+   - 그래서 다른 풀이를 참고해 다시 풂. (10819-other-1.kt / 실행 시간: 120ms) 
+   - 레퍼런스
+     - (재귀) https://bcp0109.tistory.com/236
+     - (재귀) https://notepad96.tistory.com/entry/Kotlin-14
 4. 백트래킹
 5. BFS/DFS
 
