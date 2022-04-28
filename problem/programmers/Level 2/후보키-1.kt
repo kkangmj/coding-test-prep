@@ -1,3 +1,7 @@
+/*
+* 점수: 92.0 / 100.0
+*/
+
 class Solution3 {
     fun solution(relation: Array<Array<String>>): Int {
         val combinationOfKeys = getCombinationOfKeys(relation[0].size)
