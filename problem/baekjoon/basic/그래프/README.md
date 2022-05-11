@@ -20,3 +20,10 @@
   - 그리고 성공! 어제부터 시도해본 문제인데 풀어서 행복하고, 상위권이라 기분이 좋다.
   - dfs가 좀 더 편해서 dfs로 풀었는데 나중에 bfs로 풀어보는 것도 좋을 것 같다.  
 
+- 10451번 문제 1등!
+
+  <img src="https://user-images.githubusercontent.com/52561963/167764591-1335e5d7-7841-4329-be13-6f7d8b602a42.png" width="400">
+
+- 2331번 문제도 1등~
+
+  <img src="https://user-images.githubusercontent.com/52561963/167769095-724798e8-dece-472f-8e4c-5f4f239ea555.png" width="400">
