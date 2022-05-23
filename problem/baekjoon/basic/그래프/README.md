@@ -9,6 +9,7 @@
   - Union: x와 y가 포함되어 있는 집합을 합치는 연산
     - 부모를 합칠 때에는 더 작은 값 쪽으로 합침.
 - Disjoint Set(상호 배타적 집합, 서로소 집합)을 표현할 수 있음. 
+- 셀프루프(self-loop : 자기자신을 가리키는 간선)을 포함하면 안되고 무방향그래프에서 사이클을 찾는데 유용함.
 - 1717번 문제
 ```
 fun union(x: Int, y: Int) {
@@ -165,6 +166,7 @@ fun dijkstra(v: Int, n: Int, graph: Array<IntArray>) {
 - https://gomgomkim.tistory.com/19
 
 ### 플로이드 워셜 알고리즘
+- ...
 
 <br>
 
