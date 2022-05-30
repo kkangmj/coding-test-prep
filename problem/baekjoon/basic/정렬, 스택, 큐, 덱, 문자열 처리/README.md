@@ -88,7 +88,7 @@ fun bubbleSort(array: Array<Int>) {
 ```
 fun mergeSort(array: IntArray, left: Int, right: Int) {
   if (left < right) {
-      val mid = (left + right) / 2
+    val mid = (left + right) / 2
     mergeSort(array, left, mid)
     mergeSort(array, mid + 1, right)
     merge(array, left, mid, right)
@@ -333,3 +333,10 @@ fun heapify(array: ArrayList<Int>, size: Int, pNode: Int) {
 ## ETC
 - 11651번 문제 코틀린 기준 3등!
   <img src="https://user-images.githubusercontent.com/52561963/162118316-e57b0517-7033-4660-93fe-ef128bf376a2.png" width="400" />
+
+- 10825번 문제 코틀린 기준 1등
+
+  <img src="https://user-images.githubusercontent.com/52561963/170902566-1344c6c3-adee-4a0e-a011-4b05b0a78b0a.png" width="400">
+  
+  - 처음에는 8등인가 함. 이때는 Student 객체를 MutableList에 저장했고, compareTo 함수 분기가 조금 복잡했음. (국영수)
+  - 이후 Student 객체를 PriorityQueue에 저장하고 compareTo 함수를 단순화함. (other-1) 
