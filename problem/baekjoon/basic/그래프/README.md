@@ -199,3 +199,7 @@ fun dijkstra(v: Int, n: Int, graph: Array<IntArray>) {
   - 첫 시도에서는 2등이었는데, while(!pq.isEmpty()) 대신 MST의 성립조건 중 하나인 "n개의 정점을 가지는 그래프에 대해 반드시 (n-1)개의 간선만을 사용해야 함."을 만족시키면 반복 종료되도록 while(numberOfVertexInMST < numberOfComputer-1)로 변경함.
 
   <img src="https://user-images.githubusercontent.com/52561963/168230696-6e4b3275-dc65-4b06-a1bf-e325e1450dae.png" width="400">
+
+- 7576번 문제 8등!
+
+  <img src="https://user-images.githubusercontent.com/52561963/171971827-63110e23-b3f5-498c-817a-afd3761e957c.png" width="400">
