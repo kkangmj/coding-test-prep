@@ -63,6 +63,12 @@
   - https://withhamit.tistory.com/246
   - https://loosie.tistory.com/272
 
+### 소수 판별법
+- 에라토스테네스의 체
+- 밀러-라빈 소수 판별법
+- 레퍼런스
+  - https://rebro.kr/46
+
 <br>
 
 ## ETC
