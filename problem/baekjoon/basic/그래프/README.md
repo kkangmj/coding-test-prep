@@ -74,6 +74,41 @@ while (numberOfVertexInMST < numberOfComputer - 1) {
 - 시작 정점에서부터 출발해 신장트리 집합을 단계적으로 확장해나가며 최소 신장 부분 트리를 찾는 알고리즘
 - "정점 선택"을 기반으로 하는 알고리즘
 - 이전 단계에서 만들어진 신장 트리를 확장하는 방법임.
+- 1647번 문제
+```
+PriorityQueue<Node> pq = new PriorityQueue<>();
+boolean[] visited = new boolean[N+1];
+pq.add(new Node(1, 0));
+int dist = 0;
+int numOfVisitedNode = 0;
+
+while (!pq.isEmpty()) {
+  Node node = pq.poll();
+  int v = node.v;
+  int w = node.w;
+  
+  if (visited[v]) {
+    continue;
+  }
+  
+  visited[v] = true;
+  numOfVisitedNode++;
+  dist += w;
+  
+  if (numOfVisitedNode >= numOfHouse) {
+    break;
+  }
+  
+  for (Node linkedNode : nodes[v]) {
+    if (!visited[linkedNode.v]) {
+      pq.add(linkedNode);
+    }
+  }
+}
+```
+- https://kwin0825.tistory.com/77
+- https://toastfactory.tistory.com/184
+- https://www.weeklyps.com/entry/%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Prims-algorithm
 
 ### 다익스트라 알고리즘 
 - 특정한 하나의 정점에서 다른 모든 정점으로 가는 최단 경로를 찾는 알고리즘
