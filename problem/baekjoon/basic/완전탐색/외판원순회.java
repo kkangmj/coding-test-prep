@@ -52,6 +52,7 @@ public class 외판원순회 {
       return map[city][0];  // 현재 도시 -> 0번쨰(시작) 도시 이동 거리
     }
 
+    // 출력용
     int visitBitmaskIn5Digit = Integer.parseInt(Integer.toBinaryString(visitBitmask).toString());
 
     if (dp[city][visitBitmask] != INF) {      // dp값이 존재하는경우
