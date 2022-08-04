@@ -24,7 +24,7 @@ public class Solution_234 {
     return true;
   }
 
-  public class ListNode {
+  class ListNode {
 
     int val;
     ListNode next;
