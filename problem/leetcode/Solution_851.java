@@ -1,5 +1,5 @@
-/**
- * 851. Loud and Rich
+/*
+ * 851. Loud and Rich (Recursive)
  * Runtime: 20ms, Memory: 68MB
  */
 
