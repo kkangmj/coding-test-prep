@@ -1,5 +1,5 @@
 /*
-가장 먼 노드
+가장 먼 노드 - 다익스트라
  */
 
 import java.util.ArrayList;
