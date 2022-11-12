@@ -39,7 +39,7 @@
 <br>
 
 ## Hall Of Fame
-> 코틀린 기준으로 백준에서 3위 안에 든 문제
+> Java/Kotlin 기준으로 백준에서 10위 안에 든 문제
 ### 그래프
 - 10451번 문제 1등!
 
@@ -66,6 +66,10 @@
 - 1202번 문제 1등
   
   <img src="https://user-images.githubusercontent.com/52561963/179394035-d20bfd0f-3199-4d20-a75d-5b77220c8dc7.png" width="400">
+
+- 1826번 문제 9등
+
+  <img src="https://user-images.githubusercontent.com/52561963/201456008-8ad5465b-0773-4146-a8b9-765ea791e6fc.png" width="400">
 
 ### 정렬, 스택, 큐, 덱, 문자열 처리, 기타 자료 구조, 기초 수학
 
